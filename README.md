@@ -14,3 +14,5 @@ The site is buildless HTML and CSS. Open `index.html` locally or serve the folde
 ## Visual system
 
 The interface uses a Swiss grid, Arial/Helvetica, off-white and black surfaces, signal yellow, figure captions, and image-led project presentation. The home hero uses a CSS-only image cycle and respects `prefers-reduced-motion`.
+
+The production pages reuse the component classes documented in `style-guide.html`, including `component-header`, `landing-hero`, `project-card`, `case-intro-demo`, `project-figure`, `case-section-demo`, `process-gallery`, `next-project`, `bio-section`, and `site-footer`.
