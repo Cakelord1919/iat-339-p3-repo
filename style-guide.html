@@ -1,120 +1,177 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eric Gabriel Cheng Li — Portfolio Style Guide</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eric Gabriel Cheng Li — Portfolio Style Guide</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body class="style-guide-page">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Eric Gabriel Cheng Li — home"><img src="assets/logo.svg" alt=""></a>
-    <nav aria-label="Style guide navigation">
-      <a href="index.html">HOME</a>
-      <a href="#text-elements">TYPE</a>
-      <a href="#combined-elements">COMPONENTS</a>
-      <a href="#citations">CITATIONS</a>
-    </nav>
-    <span class="edition">STYLE GUIDE / 2026</span>
-  </header>
+    <header class="formal-header site-header">
+      <a class="wordmark" href="#top" aria-label="Eric Gabriel Cheng Li — home"
+        ><img src="assets/logo.svg" alt=""
+      /></a>
+      <nav aria-label="Style guide navigation">
+        <a href="index.html">HOME</a>
+        <a href="#text-elements">TYPE</a>
+        <a href="#combined-elements">COMPONENTS</a>
+        <a href="#citations">CITATIONS</a>
+      </nav>
+      <span class="edition">STYLE GUIDE / 2026</span>
+    </header>
 
-  <main id="main">
-    <section class="guide-intro" id="top">
-      <span class="eyebrow">PORTFOLIO SYSTEM / SWISS GRID</span>
-      <div>
-        <h1>Eric Gabriel<br>Cheng Li<span class="yellow-dot">.</span></h1>
-        <p>A visual system for a game designer, graphic designer, and 3D artist. The guide uses a strict grid, direct typography, black and off-white surfaces, and yellow as a functional accent.</p>
-        <a class="button-primary guide-home-button" href="index.html">VIEW PORTFOLIO HOME <span class="svg-arrow arrow-left" aria-hidden="true"></span></a>
-      </div>
-    </section>
-
-    <section class="guide-section" id="text-elements">
-      <header class="section-heading">
-        <span class="section-number">01</span>
-        <h2>Text<br>elements</h2>
-        <p>Arial and Helvetica create the neutral, direct voice of the case-study pages.</p>
-      </header>
-
-      <article class="element">
-        <div class="element-label"><span>01.1</span><h3>Headings</h3></div>
-        <div class="element-demo type-scale">
-          <h1>Project Title</h1>
-          <h2>Environment as narrative</h2>
-          <h3>Art direction &amp; level design</h3>
-          <h4>01 / DESIGN DECISION</h4>
+    <main id="main">
+      <section class="guide-intro" id="top">
+        <span class="eyebrow">PORTFOLIO SYSTEM / SWISS GRID</span>
+        <div>
+          <h1>Eric Gabriel<br />Cheng Li<span class="yellow-dot">.</span></h1>
+          <p>
+            A visual system for a game designer, graphic designer, and 3D
+            artist. The guide uses a strict grid, direct typography, black and
+            off-white surfaces, and yellow as a functional accent.
+          </p>
+          <a class="button-primary guide-home-button" href="index.html"
+            >VIEW PORTFOLIO HOME
+            <span class="svg-arrow arrow-left" aria-hidden="true"></span
+          ></a>
         </div>
-        <pre><code>&lt;h1&gt;Project Title&lt;/h1&gt;
+      </section>
+
+      <section class="guide-section" id="text-elements">
+        <header class="section-heading">
+          <span class="section-number">01</span>
+          <h2>Text<br />elements</h2>
+          <p>
+            Arial and Helvetica create the neutral, direct voice of the
+            case-study pages.
+          </p>
+        </header>
+
+        <article class="element">
+          <div class="element-label">
+            <span>01.1</span>
+            <h3>Headings</h3>
+          </div>
+          <div class="element-demo type-scale">
+            <h1>Project Title</h1>
+            <h2>Environment as narrative</h2>
+            <h3>Art direction &amp; level design</h3>
+            <h4>01 / DESIGN DECISION</h4>
+          </div>
+          <pre><code>&lt;h1&gt;Project Title&lt;/h1&gt;
 &lt;h2&gt;Environment as narrative&lt;/h2&gt;
 &lt;h3&gt;Art direction &amp;amp; level design&lt;/h3&gt;
 &lt;h4&gt;01 / DESIGN DECISION&lt;/h4&gt;</code></pre>
-      </article>
+        </article>
 
-      <article class="element">
-        <div class="element-label"><span>01.2</span><h3>Paragraph</h3></div>
-        <div class="element-demo prose-demo">
-          <p>Each project page explains the challenge, the role, the decisions, and the final result. Text remains narrow enough to read comfortably while the surrounding grid connects it to images and project facts.</p>
-        </div>
-        <pre><code>&lt;p&gt;Each project page explains the challenge, the role, the decisions, and the final result.&lt;/p&gt;</code></pre>
-      </article>
+        <article class="element">
+          <div class="element-label">
+            <span>01.2</span>
+            <h3>Paragraph</h3>
+          </div>
+          <div class="element-demo prose-demo">
+            <p>
+              Each project page explains the challenge, the role, the decisions,
+              and the final result. Text remains narrow enough to read
+              comfortably while the surrounding grid connects it to images and
+              project facts.
+            </p>
+          </div>
+          <pre><code>&lt;p&gt;Each project page explains the challenge, the role, the decisions, and the final result.&lt;/p&gt;</code></pre>
+        </article>
 
-      <article class="element">
-        <div class="element-label"><span>01.3</span><h3>Colour &amp; material</h3></div>
-        <div class="element-demo swatches">
-          <div class="swatch paper"><span>Paper</span><code>#FAFAF7</code></div>
-          <div class="swatch ink"><span>Ink</span><code>#131313</code></div>
-          <div class="swatch yellow"><span>Signal yellow</span><code>#FFE500</code></div>
-          <div class="swatch muted"><span>Muted</span><code>#62625D</code></div>
-        </div>
-        <pre><code>&lt;div class="swatch yellow"&gt;
+        <article class="element">
+          <div class="element-label">
+            <span>01.3</span>
+            <h3>Colour &amp; material</h3>
+          </div>
+          <div class="element-demo swatches">
+            <div class="swatch paper">
+              <span>Paper</span><code>#FAFAF7</code>
+            </div>
+            <div class="swatch ink"><span>Ink</span><code>#131313</code></div>
+            <div class="swatch yellow">
+              <span>Signal yellow</span><code>#FFE500</code>
+            </div>
+            <div class="swatch muted">
+              <span>Muted</span><code>#62625D</code>
+            </div>
+          </div>
+          <pre><code>&lt;div class="swatch yellow"&gt;
   &lt;span&gt;Signal yellow&lt;/span&gt;
   &lt;code&gt;#FFE500&lt;/code&gt;
 &lt;/div&gt;</code></pre>
-      </article>
-    </section>
+        </article>
+      </section>
 
-    <section class="guide-section" id="combined-elements">
-      <header class="section-heading">
-        <span class="section-number">02</span>
-        <h2>Portfolio<br>components</h2>
-        <p>Combined elements are made for an individual portfolio rather than a commercial storefront.</p>
-      </header>
+      <section class="guide-section" id="combined-elements">
+        <header class="section-heading">
+          <span class="section-number">02</span>
+          <h2>Portfolio<br />components</h2>
+          <p>
+            Combined elements are made for an individual portfolio rather than a
+            commercial storefront.
+          </p>
+        </header>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.1</span><h3>Main navigation</h3></div>
-        <div class="element-demo">
-          <header class="component-header">
-            <a class="wordmark" href="#" aria-label="Home"><img src="assets/logo.svg" alt=""></a>
-            <nav aria-label="Example navigation">
-              <a href="#">WORK</a><a href="#">ABOUT</a><a href="#">RESUME</a><a href="#">CONTACT <span class="svg-arrow arrow-up-right" aria-hidden="true"></span></a>
-            </nav>
-            <span>PORTFOLIO / 2026</span>
-          </header>
-        </div>
-        <pre><code>&lt;header class="component-header"&gt;
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.1</span>
+            <h3>Main navigation</h3>
+          </div>
+          <div class="element-demo">
+            <header class="component-header formal-header">
+              <a class="wordmark" href="#" aria-label="Home"
+                ><img src="assets/logo.svg" alt=""
+              /></a>
+              <nav aria-label="Example navigation">
+                <a href="#">WORK</a><a href="#">ABOUT</a
+                ><a href="#">STYLE GUIDE</a>
+              </nav>
+              <span>PORTFOLIO / 2026</span>
+            </header>
+          </div>
+          <pre><code>&lt;header class="component-header formal-header"&gt;
   &lt;a class="wordmark" href="#" aria-label="Home"&gt;&lt;img src="assets/logo.svg" alt=""&gt;&lt;/a&gt;
   &lt;nav&gt;&lt;a href="#work"&gt;WORK&lt;/a&gt;&lt;a href="#about"&gt;ABOUT&lt;/a&gt;&lt;/nav&gt;
 &lt;/header&gt;</code></pre>
-      </article>
+        </article>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.2</span><h3>Landing page hero</h3></div>
-        <div class="element-demo">
-          <section class="landing-hero">
-            <div class="hero-image" role="img" aria-label="Replace with a cinematic project image">
-              <span>HERO IMAGE / 16:9</span>
-            </div>
-            <div class="hero-overlay">
-              <span class="eyebrow">GAME DESIGN / 3D ART / VISUAL DESIGN</span>
-              <h2>Ideas become<br>playable worlds<span>.</span></h2>
-              <a href="#">EXPLORE WORK <span class="svg-arrow arrow-down" aria-hidden="true"></span></a>
-            </div>
-          </section>
-        </div>
-        <p class="component-note">The hero starts with one full-width image and a short identity statement. Keep the image cinematic and readable behind large type; use the yellow block only as a signal.</p>
-        <pre><code>&lt;section class="landing-hero"&gt;
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.2</span>
+            <h3>Landing page hero</h3>
+          </div>
+          <div class="element-demo">
+            <section class="landing-hero">
+              <div
+                class="hero-image"
+                role="img"
+                aria-label="Replace with a cinematic project image"
+              >
+                <span>HERO IMAGE / 16:9</span>
+              </div>
+              <div class="hero-overlay">
+                <span class="eyebrow"
+                  >GAME DESIGN / 3D ART / VISUAL DESIGN</span
+                >
+                <h2>Ideas become<br />playable worlds<span>.</span></h2>
+                <a href="#"
+                  >EXPLORE WORK
+                  <span class="svg-arrow arrow-down" aria-hidden="true"></span
+                ></a>
+              </div>
+            </section>
+          </div>
+          <p class="component-note">
+            The hero starts with one full-width image and a short identity
+            statement. Keep the image cinematic and readable behind large type;
+            use the yellow block only as a signal.
+          </p>
+          <pre><code>&lt;section class="landing-hero"&gt;
   &lt;div class="hero-image" role="img" aria-label="Project image"&gt;&lt;/div&gt;
   &lt;div class="hero-overlay"&gt;
     &lt;span class="eyebrow"&gt;GAME DESIGN / 3D ART&lt;/span&gt;
@@ -122,150 +179,277 @@
     &lt;a href="#work"&gt;EXPLORE WORK &lt;span class="svg-arrow arrow-down" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;
   &lt;/div&gt;
 &lt;/section&gt;</code></pre>
-      </article>
+        </article>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.3</span><h3>Project card</h3></div>
-        <div class="element-demo project-grid-demo">
-          <a class="project-card" href="#">
-            <div class="project-image"><img src="assets/projects/last-of-the-stars-cover.png" alt="The Last of the Stars title artwork over an orange collapsing city"><span>VIEW PROJECT <i class="svg-arrow arrow-up-right" aria-hidden="true"></i></span></div>
-            <div class="project-meta"><span>01 / GAME DESIGN</span><span>2026</span></div>
-            <h4>The Last of the Stars</h4>
-            <p>Art and level design for a drawing-driven platformer.</p>
-          </a>
-          <a class="project-card" href="#">
-            <div class="project-image"><img src="assets/projects/something-lurking-cover.png" alt="Astronaut artwork for Something Lurking, a VR exploration experience"><span>VIEW PROJECT <i class="svg-arrow arrow-up-right" aria-hidden="true"></i></span></div>
-            <div class="project-meta"><span>02 / VR</span><span>2025</span></div>
-            <h4>Something Lurking</h4>
-            <p>Art direction and level design for a VR exploration project.</p>
-          </a>
-        </div>
-        <pre><code>&lt;a class="project-card" href="#"&gt;
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.3</span>
+            <h3>Project card</h3>
+          </div>
+          <div class="element-demo project-grid-demo">
+            <a class="project-card" href="#">
+              <div class="project-image">
+                <img
+                  src="assets/projects/last-of-the-stars-cover.png"
+                  alt="The Last of the Stars title artwork over an orange collapsing city"
+                /><span
+                  >VIEW PROJECT
+                  <i class="svg-arrow arrow-up-right" aria-hidden="true"></i
+                ></span>
+              </div>
+              <div class="project-meta">
+                <span>01 / GAME DESIGN</span><span>2026</span>
+              </div>
+              <h4>The Last of the Stars</h4>
+              <p>Art and level design for a drawing-driven platformer.</p>
+            </a>
+            <a class="project-card" href="#">
+              <div class="project-image">
+                <img
+                  src="assets/projects/something-lurking-cover.png"
+                  alt="Astronaut artwork for Something Lurking, a VR exploration experience"
+                /><span
+                  >VIEW PROJECT
+                  <i class="svg-arrow arrow-up-right" aria-hidden="true"></i
+                ></span>
+              </div>
+              <div class="project-meta">
+                <span>02 / VR</span><span>2025</span>
+              </div>
+              <h4>Something Lurking</h4>
+              <p>
+                Art direction and level design for a VR exploration project.
+              </p>
+            </a>
+          </div>
+          <pre><code>&lt;a class="project-card" href="#"&gt;
   &lt;div class="project-image"&gt;&lt;img src="assets/projects/project-cover.png" alt="Project cover"&gt;&lt;span&gt;VIEW PROJECT&lt;/span&gt;&lt;/div&gt;
   &lt;div class="project-meta"&gt;&lt;span&gt;01 / GAME DESIGN&lt;/span&gt;&lt;span&gt;2026&lt;/span&gt;&lt;/div&gt;
   &lt;h4&gt;Project title&lt;/h4&gt;
   &lt;p&gt;Short project description.&lt;/p&gt;
 &lt;/a&gt;</code></pre>
-      </article>
+        </article>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.4</span><h3>Case-study introduction</h3></div>
-        <div class="element-demo case-intro-demo">
-          <div class="case-title">
-            <span class="eyebrow">VR EXPLORATION / 2025</span>
-            <h2>Something<br>Lurking</h2>
-            <p>Designing tension through space, scale, and discovery.</p>
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.4</span>
+            <h3>Case-study introduction</h3>
           </div>
-          <dl class="case-facts-demo">
-            <div><dt>MY ROLE</dt><dd>Art Director &amp;<br>Level Designer</dd></div>
-            <div><dt>TIMEFRAME</dt><dd>1 month / 2025</dd></div>
-            <div><dt>FORMAT</dt><dd>Collaborative VR project</dd></div>
-            <div><dt>TOOLS</dt><dd>Unity / Blender</dd></div>
-          </dl>
-        </div>
-        <pre><code>&lt;section class="case-intro-demo"&gt;
+          <div class="element-demo case-intro-demo">
+            <div class="case-title">
+              <span class="eyebrow">VR EXPLORATION / 2025</span>
+              <h2>Something<br />Lurking</h2>
+              <p>Designing tension through space, scale, and discovery.</p>
+            </div>
+            <dl class="case-facts-demo">
+              <div>
+                <dt>MY ROLE</dt>
+                <dd>Art Director &amp;<br />Level Designer</dd>
+              </div>
+              <div>
+                <dt>TIMEFRAME</dt>
+                <dd>1 month / 2025</dd>
+              </div>
+              <div>
+                <dt>FORMAT</dt>
+                <dd>Collaborative VR project</dd>
+              </div>
+              <div>
+                <dt>TOOLS</dt>
+                <dd>Unity / Blender</dd>
+              </div>
+            </dl>
+          </div>
+          <pre><code>&lt;section class="case-intro-demo"&gt;
   &lt;div class="case-title"&gt;&lt;span class="eyebrow"&gt;VR EXPLORATION / 2025&lt;/span&gt;&lt;h2&gt;Something Lurking&lt;/h2&gt;&lt;/div&gt;
   &lt;dl class="case-facts-demo"&gt;&lt;div&gt;&lt;dt&gt;MY ROLE&lt;/dt&gt;&lt;dd&gt;Art Director &amp;amp; Level Designer&lt;/dd&gt;&lt;/div&gt;&lt;/dl&gt;
 &lt;/section&gt;</code></pre>
-      </article>
+        </article>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.5</span><h3>Project media &amp; caption</h3></div>
-        <div class="element-demo">
-          <figure class="project-figure">
-            <div class="figure-placeholder"><span>PROJECT IMAGE / VIDEO</span></div>
-            <figcaption><span>FIG. 01 / PROJECT OVERVIEW</span><span>2026</span></figcaption>
-          </figure>
-        </div>
-        <pre><code>&lt;figure class="project-figure"&gt;
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.5</span>
+            <h3>Project media &amp; caption</h3>
+          </div>
+          <div class="element-demo">
+            <figure class="project-figure">
+              <div class="figure-placeholder">
+                <span>PROJECT IMAGE / VIDEO</span>
+              </div>
+              <figcaption>
+                <span>FIG. 01 / PROJECT OVERVIEW</span><span>2026</span>
+              </figcaption>
+            </figure>
+          </div>
+          <pre><code>&lt;figure class="project-figure"&gt;
   &lt;img src="img/project-image.jpg" alt="Description of the project image"&gt;
   &lt;figcaption&gt;&lt;span&gt;FIG. 01 / PROJECT OVERVIEW&lt;/span&gt;&lt;span&gt;2026&lt;/span&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
-        <p class="component-note">Project figures preserve the source image's intrinsic aspect ratio. Do not force figure media into a fixed crop; use full-width, auto-height images so composition and positioning remain intact.</p>
-      </article>
+          <p class="component-note">
+            Project figures preserve the source image's intrinsic aspect ratio.
+            Do not force figure media into a fixed crop; use full-width,
+            auto-height images so composition and positioning remain intact.
+          </p>
+        </article>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.6</span><h3>Case-study text section</h3></div>
-        <div class="element-demo case-section-demo">
-          <span class="eyebrow">01 / THE CHALLENGE</span>
-          <div><h2>Environment as narrative</h2><p>The section label occupies the first three columns. The title and body begin on the fourth column, creating a repeatable Swiss structure for every project page.</p></div>
-        </div>
-        <pre><code>&lt;article class="case-section-demo analysis-block"&gt;
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.6</span>
+            <h3>Case-study text section</h3>
+          </div>
+          <div class="element-demo case-section-demo">
+            <aside>
+              <span class="micro">PROCESS ANALYSIS</span>
+              <p class="analysis-count">WORD COUNT / 282</p>
+            </aside>
+            <div class="analysis-copy">
+              <h2>Environment as narrative</h2>
+              <p>
+                The section label occupies the first three columns. The title
+                and body begin on the fourth column, creating a repeatable Swiss
+                structure for every project page.
+              </p>
+            </div>
+          </div>
+          <pre><code>&lt;article class="case-section-demo analysis-block"&gt;
   &lt;aside&gt;&lt;span class="micro"&gt;PROCESS ANALYSIS&lt;/span&gt;&lt;p class="analysis-count"&gt;WORD COUNT / 282&lt;/p&gt;&lt;/aside&gt;
   &lt;div class="analysis-copy"&gt;&lt;h2&gt;Environment as narrative&lt;/h2&gt;&lt;p&gt;Case-study copy.&lt;/p&gt;&lt;/div&gt;
 &lt;/article&gt;</code></pre>
-      </article>
+        </article>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.7</span><h3>Next-project link</h3></div>
-        <div class="element-demo">
-          <a class="next-project" href="#"><span>NEXT PROJECT</span><strong>The Last of the Stars</strong><span class="svg-arrow arrow-up-right" aria-hidden="true"></span></a>
-        </div>
-        <pre><code>&lt;a class="next-project" href="#"&gt;
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.7</span>
+            <h3>Next-project link</h3>
+          </div>
+          <div class="element-demo">
+            <a class="next-project" href="#"
+              ><span>NEXT PROJECT</span><strong>The Last of the Stars</strong
+              ><span class="svg-arrow arrow-up-right" aria-hidden="true"></span
+            ></a>
+          </div>
+          <pre><code>&lt;a class="next-project" href="#"&gt;
   &lt;span&gt;NEXT PROJECT&lt;/span&gt;
   &lt;strong&gt;The Last of the Stars&lt;/strong&gt;
   &lt;span class="svg-arrow arrow-up-right" aria-hidden="true"&gt;&lt;/span&gt;
 &lt;/a&gt;</code></pre>
-      </article>
+        </article>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.8</span><h3>Process gallery</h3></div>
-        <div class="element-demo process-gallery">
-          <figure class="wide"><div class="figure-placeholder"><span>WIDE PROCESS ARTIFACT</span></div><figcaption>FIG. 02 / PROCESS OVERVIEW</figcaption></figure>
-          <figure><div class="figure-placeholder"><span>ITERATION A</span></div><figcaption>FIG. 03 / EARLY ITERATION</figcaption></figure>
-          <figure><div class="figure-placeholder"><span>ITERATION B</span></div><figcaption>FIG. 04 / REFINED ITERATION</figcaption></figure>
-        </div>
-        <pre><code>&lt;section class="process-gallery" aria-label="Project process artifacts"&gt;
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.8</span>
+            <h3>Process gallery</h3>
+          </div>
+          <div class="element-demo process-gallery">
+            <figure class="wide">
+              <div class="figure-placeholder">
+                <span>WIDE PROCESS ARTIFACT</span>
+              </div>
+              <figcaption>FIG. 02 / PROCESS OVERVIEW</figcaption>
+            </figure>
+            <figure>
+              <div class="figure-placeholder"><span>ITERATION A</span></div>
+              <figcaption>FIG. 03 / EARLY ITERATION</figcaption>
+            </figure>
+            <figure>
+              <div class="figure-placeholder"><span>ITERATION B</span></div>
+              <figcaption>FIG. 04 / REFINED ITERATION</figcaption>
+            </figure>
+          </div>
+          <pre><code>&lt;section class="process-gallery" aria-label="Project process artifacts"&gt;
   &lt;figure class="wide"&gt;&lt;img src="img/process-overview.jpg" alt="Process overview"&gt;&lt;figcaption&gt;FIG. 02 / PROCESS OVERVIEW&lt;/figcaption&gt;&lt;/figure&gt;
   &lt;figure&gt;&lt;img src="img/iteration-a.jpg" alt="Early iteration"&gt;&lt;figcaption&gt;FIG. 03 / EARLY ITERATION&lt;/figcaption&gt;&lt;/figure&gt;
   &lt;figure&gt;&lt;img src="img/iteration-b.jpg" alt="Refined iteration"&gt;&lt;figcaption&gt;FIG. 04 / REFINED ITERATION&lt;/figcaption&gt;&lt;/figure&gt;
 &lt;/section&gt;</code></pre>
-      </article>
+        </article>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.9</span><h3>Bio section</h3></div>
-        <div class="element-demo bio-section">
-          <span class="eyebrow">02 / BIO</span>
-          <div><h2>Designing the space between image and play.</h2><p>A short introduction connecting role, process, and visual ethos.</p></div>
-        </div>
-        <pre><code>&lt;section class="bio-section" id="about"&gt;
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.9</span>
+            <h3>Bio section</h3>
+          </div>
+          <div class="element-demo bio-section">
+            <span class="eyebrow">02 / BIO</span>
+            <div>
+              <h2>Designing the space between image and play.</h2>
+              <p>
+                A short introduction connecting role, process, and visual ethos.
+              </p>
+            </div>
+          </div>
+          <pre><code>&lt;section class="bio-section" id="about"&gt;
   &lt;span class="micro"&gt;02 / BIO&lt;/span&gt;
   &lt;div&gt;&lt;h2&gt;Designing the space between image and play.&lt;/h2&gt;&lt;p&gt;Bio copy under 100 words.&lt;/p&gt;&lt;/div&gt;
 &lt;/section&gt;</code></pre>
-      </article>
+        </article>
 
-      <article class="element element-wide">
-        <div class="element-label"><span>02.10</span><h3>Site footer</h3></div>
-        <div class="element-demo">
-          <footer class="site-footer component-footer"><span>ERIC GABRIEL CHENG LI / 2026</span><a href="#top">BACK TO TOP</a></footer>
-        </div>
-        <pre><code>&lt;footer class="site-footer"&gt;
+        <article class="element element-wide">
+          <div class="element-label">
+            <span>02.10</span>
+            <h3>Site footer</h3>
+          </div>
+          <div class="element-demo">
+            <footer class="site-footer component-footer">
+              <span>ERIC GABRIEL CHENG LI / 2026</span
+              ><a href="#top">BACK TO TOP</a>
+            </footer>
+          </div>
+          <pre><code>&lt;footer class="site-footer"&gt;
   &lt;span&gt;ERIC GABRIEL CHENG LI / 2026&lt;/span&gt;
   &lt;a href="#top"&gt;BACK TO TOP&lt;/a&gt;
 &lt;/footer&gt;</code></pre>
-      </article>
-    </section>
+        </article>
+      </section>
 
-    <section class="guide-section" id="citations">
-      <header class="section-heading">
-        <span class="section-number">03</span>
-        <h2>Citations</h2>
-        <p>References used to define the visual direction of this guide.</p>
-      </header>
-      <ul class="citation-list">
-        <li><span>01</span><p>Arial / Helvetica system typefaces. Distributed with common operating systems.</p></li>
-        <li><span>02</span><p>Heath Smith. <a href="https://heathsmith.net/index.php/portfolio/">Portfolio</a>. Referenced for image-led project presentation and project hierarchy.</p></li>
-        <li><span>03</span><p>Jack Bromhead. <a href="https://www.jackbromhead.com/">Portfolio</a>. Referenced for cinematic landing imagery and direct role-based introduction.</p></li>
-        <li><span>04</span><p>Eric Gabriel Cheng Li. Personal Portfolio. Referenced for colour, typography, Swiss grid, captions, and case-study components.</p></li>
-      </ul>
-    </section>
-  </main>
+      <section class="guide-section" id="citations">
+        <header class="section-heading">
+          <span class="section-number">03</span>
+          <h2>Citations</h2>
+          <p>References used to define the visual direction of this guide.</p>
+        </header>
+        <ul class="citation-list">
+          <li>
+            <span>01</span>
+            <p>
+              Arial / Helvetica system typefaces. Distributed with common
+              operating systems.
+            </p>
+          </li>
+          <li>
+            <span>02</span>
+            <p>
+              Heath Smith.
+              <a href="https://heathsmith.net/index.php/portfolio/">Portfolio</a
+              >. Referenced for image-led project presentation and project
+              hierarchy.
+            </p>
+          </li>
+          <li>
+            <span>03</span>
+            <p>
+              Jack Bromhead.
+              <a href="https://www.jackbromhead.com/">Portfolio</a>. Referenced
+              for cinematic landing imagery and direct role-based introduction.
+            </p>
+          </li>
+          <li>
+            <span>04</span>
+            <p>
+              Eric Gabriel Cheng Li. Personal Portfolio. Referenced for colour,
+              typography, Swiss grid, captions, and case-study components.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <a class="wordmark" href="#top" aria-label="Eric Gabriel Cheng Li — home"><img src="assets/logo.svg" alt=""></a>
-    <span>ERIC GABRIEL CHENG LI / STYLE GUIDE</span>
-    <a href="index.html">PORTFOLIO HOME</a>
-    <a href="#top">BACK TO TOP ↑</a>
-  </footer>
-</body>
+    <footer class="site-footer">
+      <a class="wordmark" href="#top" aria-label="Eric Gabriel Cheng Li — home"
+        ><img src="assets/logo.svg" alt=""
+      /></a>
+      <span>ERIC GABRIEL CHENG LI / STYLE GUIDE</span>
+      <a href="index.html">PORTFOLIO HOME</a>
+      <a href="#top">BACK TO TOP ↑</a>
+    </footer>
+  </body>
 </html>
