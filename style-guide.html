@@ -146,21 +146,44 @@
             <h3>Landing page hero</h3>
           </div>
           <div class="element-demo">
-            <section class="landing-hero">
-              <div
-                class="hero-image"
-                role="img"
-                aria-label="Replace with a cinematic project image"
-              >
-                <span>HERO IMAGE / 16:9</span>
+            <section class="landing-hero" aria-labelledby="example-hero-title">
+              <div class="hero-image hero-reel" aria-hidden="true">
+                <figure class="hero-frame">
+                  <img
+                    src="assets/portfolio/something-lurking/interaction.gif"
+                    alt=""
+                  />
+                </figure>
+                <figure class="hero-frame">
+                  <img
+                    src="assets/portfolio/something-lurking/scale.gif"
+                    alt=""
+                  />
+                </figure>
+                <figure class="hero-frame">
+                  <img
+                    src="assets/portfolio/the-last-of-the-stars/cover.png"
+                    alt=""
+                  />
+                </figure>
+                <figure class="hero-frame">
+                  <img
+                    src="assets/portfolio/the-last-of-the-stars/gameplay-01.png"
+                    alt=""
+                  />
+                </figure>
               </div>
+              <div class="hero-shade"></div>
               <div class="hero-overlay">
-                <span class="eyebrow"
-                  >GAME DESIGN / 3D ART / VISUAL DESIGN</span
-                >
-                <h2>Ideas become<br />playable worlds<span>.</span></h2>
-                <a href="#"
-                  >EXPLORE WORK
+                <p class="micro">
+                  ERIC GABRIEL CHENG LI<br />GAME DESIGN / VISUAL DESIGN / 3D
+                  ART
+                </p>
+                <h1 id="example-hero-title">
+                  Spaces become<br />playable ideas<span>.</span>
+                </h1>
+                <a class="hero-scroll" href="index.html#work"
+                  >VIEW PROCESS
                   <span class="svg-arrow arrow-down" aria-hidden="true"></span
                 ></a>
               </div>
@@ -171,14 +194,44 @@
             statement. Keep the image cinematic and readable behind large type;
             use the yellow block only as a signal.
           </p>
-          <pre><code>&lt;section class="landing-hero"&gt;
-  &lt;div class="hero-image" role="img" aria-label="Project image"&gt;&lt;/div&gt;
-  &lt;div class="hero-overlay"&gt;
-    &lt;span class="eyebrow"&gt;GAME DESIGN / 3D ART&lt;/span&gt;
-    &lt;h2&gt;Ideas become playable worlds.&lt;/h2&gt;
-    &lt;a href="#work"&gt;EXPLORE WORK &lt;span class="svg-arrow arrow-down" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/section&gt;</code></pre>
+          <pre><code>&lt;section class="landing-hero" aria-labelledby="example-hero-title"&gt;
+        &lt;div class="hero-image hero-reel" aria-hidden="true"&gt;
+          &lt;figure class="hero-frame"&gt;
+            &lt;img
+              src="assets/portfolio/something-lurking/interaction.gif"
+              alt=""
+            /&gt;
+          &lt;/figure&gt;
+          &lt;figure class="hero-frame"&gt;
+            &lt;img src="assets/portfolio/something-lurking/scale.gif" alt="" /&gt;
+          &lt;/figure&gt;
+          &lt;figure class="hero-frame"&gt;
+            &lt;img
+              src="assets/portfolio/the-last-of-the-stars/cover.png"
+              alt=""
+            /&gt;
+          &lt;/figure&gt;
+          &lt;figure class="hero-frame"&gt;
+            &lt;img
+              src="assets/portfolio/the-last-of-the-stars/gameplay-01.png"
+              alt=""
+            /&gt;
+          &lt;/figure&gt;
+        &lt;/div&gt;
+        &lt;div class="hero-shade"&gt;&lt;/div&gt;
+        &lt;div class="hero-overlay"&gt;
+          &lt;p class="micro"&gt;
+            ERIC GABRIEL CHENG LI&lt;br /&gt;GAME DESIGN / VISUAL DESIGN / 3D ART
+          &lt;/p&gt;
+          &lt;h1 id="example-hero-title"&gt;
+            Spaces become&lt;br /&gt;playable ideas&lt;span&gt;.&lt;/span&gt;
+          &lt;/h1&gt;
+          &lt;a class="hero-scroll" href="index.html#work"
+            &gt;VIEW PROCESS
+            &lt;span class="svg-arrow arrow-down" aria-hidden="true"&gt;&lt;/span
+          &gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;</code></pre>
         </article>
 
         <article class="element element-wide">
@@ -186,7 +239,7 @@
             <span>02.3</span>
             <h3>Project card</h3>
           </div>
-          <div class="element-demo project-grid-demo">
+          <div class="element-demo project-list">
             <a class="project-card" href="#">
               <div class="project-image">
                 <img
@@ -238,7 +291,7 @@
           <div class="element-demo case-intro-demo">
             <div class="case-title">
               <span class="eyebrow">VR EXPLORATION / 2025</span>
-              <h2>Something<br />Lurking</h2>
+              <h1>Something<br />Lurking</h1>
               <p>Designing tension through space, scale, and discovery.</p>
             </div>
             <dl class="case-facts-demo">
@@ -261,7 +314,7 @@
             </dl>
           </div>
           <pre><code>&lt;section class="case-intro-demo"&gt;
-  &lt;div class="case-title"&gt;&lt;span class="eyebrow"&gt;VR EXPLORATION / 2025&lt;/span&gt;&lt;h2&gt;Something Lurking&lt;/h2&gt;&lt;/div&gt;
+  &lt;div class="case-title"&gt;&lt;span class="eyebrow"&gt;VR EXPLORATION / 2025&lt;/span&gt;&lt;h1&gt;Something Lurking&lt;/h1&gt;&lt;/div&gt;
   &lt;dl class="case-facts-demo"&gt;&lt;div&gt;&lt;dt&gt;MY ROLE&lt;/dt&gt;&lt;dd&gt;Art Director &amp;amp; Level Designer&lt;/dd&gt;&lt;/div&gt;&lt;/dl&gt;
 &lt;/section&gt;</code></pre>
         </article>
@@ -297,7 +350,7 @@
             <span>02.6</span>
             <h3>Case-study text section</h3>
           </div>
-          <div class="element-demo case-section-demo">
+          <div class="element-demo case-section-demo analysis-block">
             <aside>
               <span class="micro">PROCESS ANALYSIS</span>
               <p class="analysis-count">WORD COUNT / 282</p>
