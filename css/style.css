@@ -251,7 +251,6 @@ h2 span,
   grid-column: 2;
 }
 .section-heading > p,
-.component-note,
 .word-count,
 .analysis-count {
   color: var(--muted);
@@ -300,6 +299,7 @@ h2 span,
 .project-card:is(:hover, :focus-visible) .project-image > span {
   transform: none;
 }
+
 .project-card:is(:hover, :focus-visible) img {
   transform: scale(1.025);
 }
@@ -487,20 +487,5 @@ figcaption {
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  .hero-frame {
-    animation: none;
-  }
-  .hero-frame:first-child {
-    opacity: 1;
-  }
-  .project-image img,
-  .project-image > span {
-    transition: none;
   }
 }
