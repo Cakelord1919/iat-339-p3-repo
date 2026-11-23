@@ -15,9 +15,10 @@
         ><img src="assets/logo.svg" alt=""
       /></a>
       <nav aria-label="Style guide navigation">
-        <a href="index.html">HOME</a>
+        <a class="in-text-link" href="index.html">HOME</a>
         <a href="#text-elements">TYPE</a>
         <a href="#combined-elements">COMPONENTS</a>
+        <a href="#in-text-citation">IN-TEXT CITATION</a>
         <a href="#citations">CITATIONS</a>
       </nav>
       <span class="edition">STYLE GUIDE</span>
@@ -104,6 +105,12 @@
           <p class="element-demo">Return to the <a class="in-text-link" href="index.html">portfolio</a>.</p>
           <pre><code>&lt;a class="in-text-link" href="index.html"&gt;portfolio&lt;/a&gt;</code></pre>
         </article>
+
+        <article class="element" id="in-text-citation">
+          <div class="element-label"><span>01.5</span><h3>In-text citation</h3></div>
+          <p class="element-demo">The landing hero draws on the image-led opening of Heath Smith’s portfolio <a class="in-text-link" href="#source-heath-smith" aria-label="Reference 2: Heath Smith">[2]</a>.</p>
+          <pre><code>&lt;a class="in-text-link" href="#source-heath-smith" aria-label="Reference 2: Heath Smith"&gt;[2]&lt;/a&gt;</code></pre>
+        </article>
       </section>
 
       <section class="guide-section" id="combined-elements">
@@ -189,9 +196,7 @@
             </section>
           </div>
           <p class="component-note">
-            The hero starts with one full-width image and a short identity
-            statement. Keep the image cinematic and readable behind large type;
-            use the yellow block only as a signal.
+            The homepage cycles through four project images. With reduced motion enabled, the first frame stays visible.
           </p>
           <pre><code>&lt;section class="landing-hero" aria-labelledby="example-hero-title"&gt;
         &lt;div class="hero-image hero-reel" aria-hidden="true"&gt;
@@ -293,6 +298,7 @@
               <h1>Something<br />Lurking</h1>
               <p>Designing tension through space, scale, and discovery.</p>
             </div>
+            <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dl Dl tags for description lists.-->
             <dl class="case-facts-demo">
               <div>
                 <dt>MY ROLE</dt>
@@ -324,19 +330,21 @@
             <h3>Project media &amp; caption</h3>
           </div>
           <div class="element-demo">
-            <figure class="project-figure">
-              <div class="figure-placeholder">
-                <span>PROJECT IMAGE / VIDEO</span>
-              </div>
-              <figcaption>
-                <span>FIG. 01 / PROJECT OVERVIEW</span><span>2026</span>
-              </figcaption>
-            </figure>
+            <figure class="project-figure case-cover">
+        <img
+          src="assets/portfolio/something-lurking/overview.png"
+          alt="Something Lurking environment, prop, and astronaut artwork"
+        />
+        <figcaption>FIG. 01 / PROJECT OVERVIEW <span>2025</span></figcaption>
+      </figure>
           </div>
-          <pre><code>&lt;figure class="project-figure"&gt;
-  &lt;img src="img/project-image.jpg" alt="Description of the project image"&gt;
-  &lt;figcaption&gt;&lt;span&gt;FIG. 01 / PROJECT OVERVIEW&lt;/span&gt;&lt;span&gt;2026&lt;/span&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
+          <pre><code>&lt;figure class="project-figure case-cover"&gt;
+        &lt;img
+          src="assets/portfolio/something-lurking/overview.png"
+          alt="Something Lurking environment, prop, and astronaut artwork"
+        /&gt;
+        &lt;figcaption&gt;FIG. 01 / PROJECT OVERVIEW &lt;span&gt;2025&lt;/span&gt;&lt;/figcaption&gt;
+      &lt;/figure&gt;</code></pre>
           <p class="component-note">
             Project figures preserve the source image's intrinsic aspect ratio.
             Do not force figure media into a fixed crop; use full-width,
@@ -392,27 +400,64 @@
             <span>02.8</span>
             <h3>Process gallery</h3>
           </div>
-          <div class="element-demo process-gallery">
-            <figure class="wide">
-              <div class="figure-placeholder">
-                <span>WIDE PROCESS ARTIFACT</span>
-              </div>
-              <figcaption>FIG. 02 / PROCESS OVERVIEW</figcaption>
-            </figure>
-            <figure>
-              <div class="figure-placeholder"><span>ITERATION A</span></div>
-              <figcaption>FIG. 03 / EARLY ITERATION</figcaption>
-            </figure>
-            <figure>
-              <div class="figure-placeholder"><span>ITERATION B</span></div>
-              <figcaption>FIG. 04 / REFINED ITERATION</figcaption>
-            </figure>
+          <div class="element-demo">
+<section
+        class="process-gallery"
+        aria-label="Something Lurking process artifacts"
+      >
+        <figure class="wide">
+          <img
+            src="assets/portfolio/something-lurking/planning.png"
+            alt="Planning board with level progression diagrams and environment concepts"
+          />
+          <figcaption>
+            FIG. 02 / FEEDBACK TRANSLATED INTO SPATIAL DIAGRAMS
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="assets/portfolio/something-lurking/interaction.gif"
+            alt="VR interaction prototype in motion"
+          />
+          <figcaption>FIG. 03 / INTERACTION PROTOTYPE</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="assets/portfolio/something-lurking/environment.png"
+            alt="Environment and prop production overview"
+          />
+          <figcaption>FIG. 04 / ENVIRONMENT PRODUCTION</figcaption>
+        </figure>
+      </section>
           </div>
-          <pre><code>&lt;section class="process-gallery" aria-label="Project process artifacts"&gt;
-  &lt;figure class="wide"&gt;&lt;img src="img/process-overview.jpg" alt="Process overview"&gt;&lt;figcaption&gt;FIG. 02 / PROCESS OVERVIEW&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;figure&gt;&lt;img src="img/iteration-a.jpg" alt="Early iteration"&gt;&lt;figcaption&gt;FIG. 03 / EARLY ITERATION&lt;/figcaption&gt;&lt;/figure&gt;
-  &lt;figure&gt;&lt;img src="img/iteration-b.jpg" alt="Refined iteration"&gt;&lt;figcaption&gt;FIG. 04 / REFINED ITERATION&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;/section&gt;</code></pre>
+          <pre><code>&lt;section
+        class="process-gallery"
+        aria-label="Something Lurking process artifacts"
+      &gt;
+        &lt;figure class="wide"&gt;
+          &lt;img
+            src="assets/portfolio/something-lurking/planning.png"
+            alt="Planning board with level progression diagrams and environment concepts"
+          /&gt;
+          &lt;figcaption&gt;
+            FIG. 02 / FEEDBACK TRANSLATED INTO SPATIAL DIAGRAMS
+          &lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+          &lt;img
+            src="assets/portfolio/something-lurking/interaction.gif"
+            alt="VR interaction prototype in motion"
+          /&gt;
+          &lt;figcaption&gt;FIG. 03 / INTERACTION PROTOTYPE&lt;/figcaption&gt;
+        &lt;/figure&gt;
+        &lt;figure&gt;
+          &lt;img
+            src="assets/portfolio/something-lurking/environment.png"
+            alt="Environment and prop production overview"
+          /&gt;
+          &lt;figcaption&gt;FIG. 04 / ENVIRONMENT PRODUCTION&lt;/figcaption&gt;
+        &lt;/figure&gt;
+      &lt;/section&gt;</code></pre>
         </article>
 
         <article class="element element-wide">
@@ -467,7 +512,7 @@
               operating systems.
             </p>
           </li>
-          <li>
+          <li id="source-heath-smith">
             <span>02</span>
             <p>
               Heath Smith.
