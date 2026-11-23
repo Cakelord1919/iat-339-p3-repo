@@ -375,10 +375,17 @@ figcaption {
   border-top: 1px solid var(--line);
 }
 .element-wide {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  display: flex;
+  flex-direction: column;
 }
-.element-wide > :not(.element-label) {
-  grid-column: 2;
+.element-wide > .element-label {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem var(--gap);
+}
+.element-wide .element-label h3 {
+  margin: 0;
 }
 .element-demo {
   min-width: 0;
@@ -467,8 +474,7 @@ figcaption {
   }
   .section-heading > p,
   .case-title > p:last-child,
-  .element pre,
-  .element-wide > :not(.element-label) {
+  .element pre {
     grid-column: 1;
   }
   .next-project > span:first-child {
