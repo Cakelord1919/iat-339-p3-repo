@@ -9,8 +9,8 @@ An initial portfolio template for Eric Gabriel Cheng Li, developed around a visu
 - `projects/something-lurking/index.html` — 282-word process analysis
 - `projects/the-last-of-the-stars/index.html` — 278-word process analysis
 
-The site is buildless HTML, CSS, and JavaScript. Open `index.html` locally or serve the folder with any static server.
+The site is buildless HTML and CSS. Open `index.html` locally or serve the folder with any static server.
 
 ## Visual system
 
-The interface uses a Swiss grid, Arial/Helvetica, off-white and black surfaces, signal yellow, figure captions, and image-led project presentation. The home hero cycles through artifacts from both projects and respects `prefers-reduced-motion`.
+The interface uses a Swiss grid, Arial/Helvetica, off-white and black surfaces, signal yellow, figure captions, and image-led project presentation. The home hero uses a CSS-only image cycle and respects `prefers-reduced-motion`.
