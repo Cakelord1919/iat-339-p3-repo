@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Eric Gabriel Cheng Li — Portfolio Style Guide</title>
+    <title>Eric Gabriel Cheng Li / Portfolio Style Guide</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/site.css" />
   </head>
@@ -20,24 +20,15 @@
         <a href="#combined-elements">COMPONENTS</a>
         <a href="#citations">CITATIONS</a>
       </nav>
-      <span class="edition">STYLE GUIDE / 2026</span>
+      <span class="edition">STYLE GUIDE</span>
     </header>
 
     <main id="main">
       <section class="guide-intro" id="top">
-        <span class="eyebrow">PORTFOLIO SYSTEM / SWISS GRID</span>
-        <div>
-          <h1>Eric Gabriel<br />Cheng Li<span class="yellow-dot">.</span></h1>
-          <p>
-            A visual system for a game designer, graphic designer, and 3D
-            artist. The guide uses a strict grid, direct typography, black and
-            off-white surfaces, and yellow as a functional accent.
-          </p>
-          <a class="button-primary guide-home-button" href="index.html"
-            >VIEW PORTFOLIO HOME
-            <span class="svg-arrow arrow-left" aria-hidden="true"></span
-          ></a>
-        </div>
+        <h1>Style Guide</h1>
+        <p>Typography, colour, and components used in the
+          <a class="in-text-link" href="index.html">portfolio</a>.
+        </p>
       </section>
 
       <section class="guide-section" id="text-elements">
@@ -104,6 +95,14 @@
   &lt;span&gt;Signal yellow&lt;/span&gt;
   &lt;code&gt;#FFE500&lt;/code&gt;
 &lt;/div&gt;</code></pre>
+        </article>
+        <article class="element">
+          <div class="element-label">
+            <span>01.4</span>
+            <h3>In-text link</h3>
+          </div>
+          <p class="element-demo">Return to the <a class="in-text-link" href="index.html">portfolio</a>.</p>
+          <pre><code>&lt;a class="in-text-link" href="index.html"&gt;portfolio&lt;/a&gt;</code></pre>
         </article>
       </section>
 
@@ -444,12 +443,12 @@
           <div class="element-demo">
             <footer class="site-footer component-footer">
               <span>ERIC GABRIEL CHENG LI / 2026</span
-              ><a href="#top">BACK TO TOP</a>
+              ><a class="in-text-link" href="#top">BACK TO TOP</a>
             </footer>
           </div>
           <pre><code>&lt;footer class="site-footer"&gt;
   &lt;span&gt;ERIC GABRIEL CHENG LI / 2026&lt;/span&gt;
-  &lt;a href="#top"&gt;BACK TO TOP&lt;/a&gt;
+  &lt;a class="in-text-link" href="#top"&gt;BACK TO TOP&lt;/a&gt;
 &lt;/footer&gt;</code></pre>
         </article>
       </section>
@@ -472,7 +471,7 @@
             <span>02</span>
             <p>
               Heath Smith.
-              <a href="https://heathsmith.net/index.php/portfolio/">Portfolio</a
+              <a class="in-text-link" href="https://heathsmith.net/index.php/portfolio/">Portfolio</a
               >. Referenced for image-led project presentation and project
               hierarchy.
             </p>
@@ -481,7 +480,7 @@
             <span>03</span>
             <p>
               Jack Bromhead.
-              <a href="https://www.jackbromhead.com/">Portfolio</a>. Referenced
+              <a class="in-text-link" href="https://www.jackbromhead.com/">Portfolio</a>. Referenced
               for cinematic landing imagery and direct role-based introduction.
             </p>
           </li>
@@ -501,8 +500,8 @@
         ><img src="assets/logo.svg" alt=""
       /></a>
       <span>ERIC GABRIEL CHENG LI / STYLE GUIDE</span>
-      <a href="index.html">PORTFOLIO HOME</a>
-      <a href="#top">BACK TO TOP ↑</a>
+      <a class="in-text-link" href="index.html">PORTFOLIO HOME</a>
+      <a class="in-text-link" href="#top">BACK TO TOP ↑</a>
     </footer>
   </body>
 </html>

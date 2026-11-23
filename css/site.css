@@ -7,6 +7,7 @@
   --yellow: #ffe500;
   --gutter: 4.5vw;
   --gap: 1.5rem;
+  /* W3Schools clamp() reference: https://www.w3schools.com/cssref/func_clamp.php */
   --section-space: clamp(3rem, 7vw, 7rem);
 }
 
@@ -142,8 +143,7 @@ dt,
 .site-footer {
   border-top: 1px solid var(--line);
 }
-.formal-header nav a:hover,
-.site-footer a:hover {
+.formal-header nav a:hover {
   text-decoration: underline;
   text-underline-offset: 0.3em;
 }
@@ -365,19 +365,6 @@ figcaption {
 }
 
 /* Style guide documentation */
-.guide-home-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  padding: 1rem;
-  background: var(--yellow);
-  font-weight: 700;
-}
-.guide-home-button:hover {
-  background: var(--ink);
-  color: white;
-}
 .element {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
@@ -445,8 +432,13 @@ figcaption {
   padding-block: 1rem;
   border-bottom: 1px solid var(--line);
 }
-.citation-list a {
+.in-text-link {
   text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.in-text-link:is(:hover, :focus-visible) {
+  background: var(--yellow);
+  color: var(--ink);
 }
 
 @media (max-width: 55rem) {
