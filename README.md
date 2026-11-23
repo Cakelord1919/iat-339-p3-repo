@@ -6,8 +6,8 @@ An initial portfolio template for Eric Gabriel Cheng Li, developed around a visu
 
 - `index.html` — image-led landing page, selected work, and 73-word bio
 - `style-guide.html` — visual style guide and reusable HTML element samples
-- `projects/something-lurking/index.html` — 282-word process analysis
-- `projects/the-last-of-the-stars/index.html` — 278-word process analysis
+- `projects/something-lurking.html` — 282-word process analysis
+- `projects/the-last-of-the-stars.html` — 278-word process analysis
 
 The site is buildless HTML and CSS. Open `index.html` locally or serve the folder with any static server.
 
