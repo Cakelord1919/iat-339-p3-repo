@@ -30,8 +30,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #766a00; outline-offs
 .site-header nav a, .component-header nav a, .nav-link { position: relative; font-weight: 700; letter-spacing: .03em; }
 .site-header nav a::after, .component-header nav a::after, .nav-link::after { content: ""; position: absolute; left: 0; bottom: -.45rem; width: 0; height: 2px; background: currentColor; transition: width .2s ease; }
 .site-header nav a:hover::after, .component-header nav a:hover::after, .nav-link:hover::after { width: 100%; }
-.wordmark { font-size: 1.15rem; font-weight: 800; letter-spacing: -.06em; }
-.wordmark span { margin-left: .15rem; font-size: .65rem; vertical-align: top; }
+.wordmark { display: block; width: 2.75rem; height: 2.75rem; flex: 0 0 auto; }
+.wordmark img { width: 100%; height: 100%; object-fit: contain; }
 .edition, .eyebrow, .section-number { font-size: .7rem; line-height: 1.5; font-weight: 700; letter-spacing: .07em; }
 
 main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
